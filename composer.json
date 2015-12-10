@@ -1,0 +1,29 @@
+{
+	"name": "pagewiser/database-upgrade",
+	"type": "library",
+	"description": "Simple database migration command for Nette",
+	"keywords": ["database", "nette", "dibi", "migration"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "PageWiser",
+			"homepage": "https://www.pagewiser.com"
+		}, {
+			"name": "Martin Malek",
+			"homepage": "http://www.marten-online.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.7",
+		"dibi/dibi": ">=2.2.0",
+		"kdyby/console": "2.3.*"
+	},
+	"autoload": {
+		"psr-4": { "Pagewiser\\Database\\Migration\\": "src/" }
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1-dev"
+		}
+	}
+}
