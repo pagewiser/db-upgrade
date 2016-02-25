@@ -12,8 +12,8 @@ Simple tool to upgrade database to current state.
 Update your config file
 
     console:
-    commands:
-        - Pagewiser\Database\Migration\DatabaseUpgradeCommand
+        commands:
+            - Pagewiser\Database\Migration\DatabaseUpgradeCommand
 
 ## Usage
 
