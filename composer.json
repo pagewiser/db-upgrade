@@ -16,7 +16,7 @@
 	"require": {
 		"php": ">=5.3.7",
 		"dibi/dibi": ">=2.2.0",
-		"kdyby/console": "2.3.*"
+		"kdyby/console": ">=2.3.0"
 	},
 	"autoload": {
 		"psr-4": { "Pagewiser\\Database\\Migration\\": "src/" }
