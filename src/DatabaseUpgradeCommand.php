@@ -28,7 +28,7 @@ class DatabaseUpgradeCommand extends Command
 	private $tableName = '_sql_migrate';
 
 	/**
-	 * @var \DibiConnection $dibi Dibi
+	 * @var \Dibi\Connection $dibi Dibi
 	 */
 	private $dibi;
 
@@ -112,8 +112,8 @@ class DatabaseUpgradeCommand extends Command
 	 */
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
-		/** @var \DibiConnection $dibi */
-		$dibi = $this->dibi = clone $this->getHelper('container')->getByType('DibiConnection');
+		/** @var \Dibi\Connection $dibi */
+		$dibi = $this->dibi = clone $this->getHelper('container')->getByType('Dibi\Connection');
 
 		$this->prepareSmokeTest();
 
